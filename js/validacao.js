@@ -68,7 +68,8 @@ const mensagensDeErro = {
 const validadores = {
     dataNascimento:input => validaDataNascimento(input),
     cpf:input => validaCPF(input),
-    cep:input => recuperarCEP(input)
+    cep:input => recuperarCEP(input),
+    telefone:input=> validarNumero(input)
 }
 
 function mostraMensagemDeErro(tipoDeInput, input) {
@@ -203,3 +204,6 @@ function preencheCamposComCEP(data) {
     cidade.value = data.localidade
     estado.value = data.uf
 }
+function validarNumero(input) {
+    validarNumero:input => validarNumero(input)
+    }
